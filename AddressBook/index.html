@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adddress Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+   <div class="row">
+    <div class="col-md-offset-3">
+        <div class="col-md-6" id="navigation">
+            <ul class="nav-list">
+                <li id="js-add-contact">Add Contact</li>
+                <li id="js-view-all-contact">View All Contacts</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <div id="contact-panel" class="panel"></div>
+        </div>
+    </div>
+   </div>  
+    <div id="contact-panel" class="panel">
+        <form id="contact" action="#">
+            <h1>Add a new contact</h1>
+            <div>
+                <label>
+                    <input type="text" name="person" id="name" placeholder="Adegoke Deji" />
+                </label>
+                <label>
+                    <input type="text" name="phone" id="name" placeholder="08035678651" />
+                </label>
+                <label>
+                    <input type="text" name="email" id="name" placeholder="bella@example.com" />
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+    <div id="search-panel" class="panel">
+        <h1>Search List</h1>
+        <form id="search" action="#">
+            <div id="results">
+            
+        </div>
+            <div>
+                <label>
+                    <input type="text" name="search" id="search" placeholder="Type contact name to Search" />
+                </label>
+            </div>
+                    <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <script src="js/index.js"></script> 
+</body>
+
+</html>
